@@ -1,3 +1,14 @@
 # Flexbox
 
-Esse é o repositório da nossa aula de Flexbox, na qual vamos fazer a interface de login do Instagram! 
+## Projeto
+
+Reconstrução da página de login do istagram, utilizando CSS 
+e sua propriedade Flexbox.
+
+## Tecnologias
+
+Tecnologias utilizadas no projeto:
+
+-HTML
+-CSS
+
