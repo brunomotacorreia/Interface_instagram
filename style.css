@@ -1,0 +1,151 @@
+*{
+    padding: 0; /*define uma a distância entre o conteúdo de um elemento e suas borda*/
+    margin: 0; /* define a área de margem nos quatro lados do elemento.*/
+    box-sizing: border-box; /*faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura*/
+    font-family: 'sans-serif'; /*permite que se faça uma lista de prioridades de familias de fontes e/ou nomes genéricos de famílias*/
+    text-decoration: none; /*é usada para definir a formatação de underline , overline , line-through ou blink*/
+    font-size: 14px; /*é usada para indicar o tamanho da letra(fonte) em CSS*/
+}
+
+body{
+    width: 100%; /*largura total de elemento será 100% do seu bloco de contenção mais a margem horizontal*/
+    min-height: 100vh; /* Para ter uma altura total de página responsiva, defina min-height no elemento body como 100vh*/
+    background-color: rgb(243, 243, 243);
+    margin: 0;  /* define a área de margem nos quatro lados do elemento.*/
+    padding: 0; /*define uma a distância entre o conteúdo de um elemento e suas borda*/
+    display: flex; /* atalho de abreviação para as propriedades grow, shrink e basis*/
+    justify-content: center; /* alinha os items de acordo com a direção pretendida*/
+}
+
+.instragram-wraper{
+    display: flex; /* atalho de abreviação para as propriedades grow, shrink e basis*/
+    align-items: center; /* alinhamentos dos flex de acordo com o eixo do container.*/
+    justify-content: start;  /* alinha os items de acordo com a direção pretendida*/
+    width: 60%; /* 60% da largura total do elemento*/
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex; /* atalho de abreviação para as propriedades grow, shrink e basis*/
+    align-items: center;
+    justify-content: center;  /* alinha os items de acordo com a direção pretendida*/
+    width: 50%;
+}
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column; /*define a direção que os flex itms são colocados*/
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color: #ffffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url(./img/apple-button.png);
+}
+.app-download:nth-child(2){
+    background-image: url(./img/googleplay-button.png);
+}
+
+/*media query*/
+
+@media (max-width: 1024px){
+    body{
+        background-color: #ffffffff;
+    }
+
+    .instragram-wraper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+}
